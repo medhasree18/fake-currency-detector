@@ -7,7 +7,10 @@ import org.springframework.web.multipart.MultipartFile;
 import com.currencydetection.service.DetectionService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+	    "http://localhost:5173",
+	    "https://fake-currency-frontend.vercel.app"
+	})
 @RequestMapping("/currency")
 public class CurrencyController {
 
